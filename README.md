@@ -65,9 +65,9 @@ Este é um diagrama do ambiente que deverá ser montado no Microsoft Azure, util
 
 
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima, incluindo a sua publicação na nuvem.
 O código foi totalmente implementado e está **concluído e funcionando**! 🚀
 
 Todos os requisitos e "TODOs" foram resolvidos, incluindo:
 - Configuração completa do CRUD no banco SQL relacional via Entity Framework.
 - Gravação automática de logs de auditoria no Azure Table Storage (Azure Tables) para qualquer alteração nos registros.
+- Preparação do ambiente de desenvolvimento simulando a nuvem localmente utilizando contêineres Docker (SQL Server e Azurite).
