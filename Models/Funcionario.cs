@@ -1,10 +1,12 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace TrilhaNetAzureDesafio.Models
 {
     public class Funcionario
     {
         public Funcionario() { }
 
-        public Funcionario(int id, string nome, string endereco, string ramal, string emailProfissional, string departamento, decimal salario, DateTime dataAdmissao)
+        public Funcionario(int id, string nome, string endereco, string ramal, string emailProfissional, string departamento, decimal salario, DateTimeOffset? dataAdmissao)
         {
             Id = id;
             Nome = nome;
@@ -22,6 +24,8 @@ namespace TrilhaNetAzureDesafio.Models
         public string Ramal { get; set; }
         public string EmailProfissional { get; set; }
         public string Departamento { get; set; }
+
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Salario { get; set; }
         public DateTimeOffset? DataAdmissao { get; set; }
     }

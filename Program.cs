@@ -16,7 +16,11 @@ var app = builder.Build();
 
 // Swagger
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API Desafio Azure v1");
+    options.RoutePrefix = string.Empty;
+});
 
 app.UseHttpsRedirection();
 
